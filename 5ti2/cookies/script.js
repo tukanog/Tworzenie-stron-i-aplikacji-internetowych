@@ -1,8 +1,7 @@
 function qs(s) { return document.querySelector(s) }
 
 if (document.cookie) {
-    let imieZCiasteczka = wartoscCiasteczka('imie')
-    qs('#imie').innerHTML = imieZCiasteczka
+    wyswietlImie()
 }
 else {
     let imie = prompt('Jak masz na imię?')  
@@ -13,6 +12,10 @@ else {
     */
     document.cookie = `imie=${imie}; max-age=${czas}`
 
+    wyswietlImie()
+}
+
+function wyswietlImie() {
     let imieZCiasteczka = wartoscCiasteczka('imie')
     qs('#imie').innerHTML = imieZCiasteczka
 }
@@ -24,10 +27,8 @@ function wyczysc() {
 function wartoscCiasteczka(nazwa) {
     nazwa = nazwa + '='
     let ciasteczko = document.cookie.split('; ').find((element) => element.search(nazwa) == 0)
+    console.log(ciasteczko)
     return ciasteczko ? ciasteczko.replace(nazwa, '') : false
     
     /* `czas=120; imie=Karol` -> ['czas=120', 'imie=Karol'] */
 }
-
-console.log(wartoscCiasteczka('imie'))
-console.log(wartoscCiasteczka('abcd'))
