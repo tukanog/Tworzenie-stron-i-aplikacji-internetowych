@@ -1,0 +1,21 @@
+:root {
+    font-family: Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background-color: cadetblue;
+}
+
+b {
+    color: red;
+}
+
+form {
+    width: max-content;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    text-align: center;
+}

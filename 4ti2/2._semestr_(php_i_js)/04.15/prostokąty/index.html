@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Prostokąty</title>
+</head>
+<body>
+    <h1>Prostokąty</h1>
+    <form id="generator">
+        <fieldset>
+            <legend>Generator</legend>
+            <label>
+                Szerokość: 
+                <input type="range" id="width" min="10" max="100" value="50" >
+                <output id="outputWidth">50 px</output>
+            </label>
+            <label>
+                Wysokość:
+                <input type="range" id="height" min="10" max="100" value="50">
+                <output id="outputHeight">50 px</output>
+            </label>
+            <label>
+                Styl:
+                <select id="style" required>
+                    <option value="">--wybierz--</option>
+                    <option value="red">czerwono-morski</option>
+                    <option value="green">zielono-brązowy</option>
+                    <option value="blue">niebiesko-żółty</option>
+                    <option value="white">biało-czarny</option>
+                </select>
+            </label>
+            <label>
+                Mnożnik 2x: <input type="checkbox" class="mnoznik">
+            </label>
+            <button>Generuj</button>
+        </fieldset>
+    </form>
+    <div id="galeria"></div>
+</body>
+</html>

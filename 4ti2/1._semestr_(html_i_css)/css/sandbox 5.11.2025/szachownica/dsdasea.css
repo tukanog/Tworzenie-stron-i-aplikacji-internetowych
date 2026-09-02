@@ -1,0 +1,55 @@
+body {
+    background-color: #e69292;
+    color: #fff;
+    font-family: tahoma;
+}
+
+main {
+    display:flex;
+}
+
+#left {
+    background-color: #8e5252;
+    text-align: center;
+    width: 40%;
+    height: 600px;
+}
+
+#right {
+    background-color: #d97f7f;
+    text-align: center;
+    width: 60%;
+    height: 600px;
+    ol, ul, li {
+        text-align: left;
+    }
+}
+
+
+header {
+    height: 110px;
+    padding: 5px;
+    text-align: center;
+    background-color: #cc5151;
+}
+
+
+
+footer {
+    text-align: center;
+    background-color: #cc5151;
+    padding: 10px;
+}
+
+img {
+    width: 60%;
+}
+
+h1, h2 {
+    text-decoration: underline;
+}
+
+
+cite {
+    font-style: italic;
+}

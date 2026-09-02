@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Zbrojownia</title>
+</head>
+<body>
+    <h1>Zbrojownia</h1>
+    <div class="grid">
+        <div id="kuznia">
+            <h2>Kuźnia</h2>
+            <form id="nowaBron">
+                <p>Zaprojektuj swój oręż</p>
+                <fieldset>
+                    <legend>Nazwa:</legend>
+                    <input type="text" id="nazwa" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Rodzaj:</legend>
+                    <select id="rodzaj" required>
+                        <option value="">--wybierz--</option>
+                        <option value="miecz">miecz</option>
+                        <option value="topor">topór</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Wzmocnienie:</legend>
+                    <p>
+                        <label>
+                            <input type="radio" name="wzmocnienie" class="wzmocnienie" value="normalny" required> brak
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="radio" name="wzmocnienie" class="wzmocnienie" value="ogien"> ogień
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="radio" name="wzmocnienie" class="wzmocnienie" value="lod"> lód
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="radio" name="wzmocnienie" class="wzmocnienie" value="mrok"> mrok
+                        </label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <button>Wykuj</button>
+                </fieldset>
+            </form>
+        </div>
+        <div id="magazyn">
+            <h2>Magazyn</h2>
+            <div class="flex" id="bronie">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

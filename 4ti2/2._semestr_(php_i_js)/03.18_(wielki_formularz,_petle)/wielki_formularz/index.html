@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Biuro podróży "Rajskie Wakacje"</title>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h1>Biuro podróży "Rajskie Wakacje"</h1>
+    <form id="wycieczka">
+        <h2>Formularz ofertowy</h2>
+        <fieldset>
+            <legend>Dane klienta:</legend>
+            <p>
+                <label>
+                    Imię:
+                    <input type="text" id="imie" min="3" required>
+                </label>
+            </p>
+            <p>
+                <label>Nazwisko:
+                    <input type="text" id="nazwisko" min="3" required>
+                </label>
+            </p>
+            <p>
+                <label>
+                    E-mail
+                    <input type="email" id="email" required>
+                </label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Kraj i czas pobytu</legend>
+            <p>
+                <label>
+                    Kraj:
+                    <select id="kraj" required>
+                        <option value="">--wybierz--</option>
+                        <option value="Włochy" data-cena="800">Włochy (800)</option>
+                        <option value="Tajlandia" data-cena="1200">Tajlandia (1200)</option>
+                        <option value="Meksyk" data-cena="1000">Meksyk (1000)</option>
+                    </select>
+                </label>
+            </p>
+            <p>
+                <label>
+                    Pobyt:
+                    <input type="range" id="pobyt" min="1" max="3" step="1" value="1"><output id="pobyt_output"></output> dni
+                </label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Opcje</legend>
+            <h3>Pakiet</h3>
+            <p>
+                <label>
+                    <input type="radio" class="pakiet" name="pakiet" value="normalny" data-mnoznik="1" required>
+                    normalny
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" class="pakiet" name="pakiet" value="vip" data-mnoznik="1.3">
+                    VIP
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" class="pakiet" name="pakiet" value="all-inclusive" data-mnoznik="1.8">
+                    all inclusive
+                </label>
+            </p>
+
+            <h3>Usługi dodatkowe</h3>
+            <p>
+                <label>
+                    <input type="checkbox" id="przewodnik" class="uslugi" value="przewodnik" data-cena="300">
+                    przewodnik (300)
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" id="auto" class="uslugi" value="wynajęcie samochodu" data-cena="800">
+                    wynajęcie samochodu (800)
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" id="ubezpieczenie" class="uslugi" value="ubezpieczenie" data-cena="600">
+                    dodatkowe ubezpieczenie (600)
+                </label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Zgody</legend>
+            <p>
+                <label>
+                    <input type="checkbox" id="przetwarzanie" required><b>*</b> Zgoda na przetwarzanie danych
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" id="marketing"> Zgoda na marketing
+                </label>
+            </p>
+        </fieldset>
+        <button>Zamów</button>
+    </form>
+</body>
+</html>

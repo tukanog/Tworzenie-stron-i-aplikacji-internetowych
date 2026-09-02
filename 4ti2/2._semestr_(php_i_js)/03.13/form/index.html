@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="cwiczenia.js"></script>
+</head>
+<body>
+    <form id="sprawdzwiek">
+        <h2>Sprawdź wiek</h2>
+        <p>
+            <label>
+                Wiek: <input type="range" min="0" max="100" value="18" id="wiek" required>
+                <output id="wiek_output"></output>
+            </label>
+        </p>
+        <p>
+            <label>
+                Kraj: <input type="text" id="kraj" required>
+            </label>
+        </p>
+        <button>Sprawdź</button>
+        <p id="komunikat1"></p>
+    </form>
+
+    <form id="obliczcene">
+        <h2>Oblicz cenę</h2>
+        <p>
+            <label>
+                Cena przed rabatem: <input type="number" id="cena" step="any" required> zł
+            </label>
+        </p>
+        <p>
+            <label>
+                Rabat: <input type="range" min="0" max="100" value="10" id="rabat" required>
+                <output id="rabat_output"></output> %
+            </label>
+        </p>
+        <button>Sprawdź</button>
+        <p id="komunikat2"></p>
+    </form>
+
+    <form id="powitania">
+        <h2>Powitania</h2>
+        <p>
+            <label>
+                Imię: <input type="text" id="imie" required>
+            </label>
+        </p>
+        <p>
+            <label>
+                Godzina: <input type="range" min="0" max="23" value="12" id="godzina" required>
+                <output id="godzina_output"></output>
+            </label>
+        </p>
+        <button>Sprawdź</button>
+        <p id="komunikat3"></p>
+    </form>
+</body>
+</html>

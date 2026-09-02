@@ -1,0 +1,106 @@
+p.first {
+    margin: 20px; /* wszystkie marginesy 20px */
+    padding: 20px; /* jw */
+    border: 3px solid black;
+}
+
+p.second {
+    margin: 20px 15px; /* górny i dolny: 20px; lewy i prawy: 15px */
+    padding: 20px 15px; /* jw */
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    border-right: 5px dotted red;
+    border-left: 5px dotted red;
+}
+
+p.third {
+    margin: 20px 10px 25px 0;
+    /* 
+        góra: 20px
+        prawo: 10px
+        dół: 25px
+        lewo: 0
+    */
+    padding: 20px 10px 25px 0; /* jw */
+    border-top: 3px solid black;
+    border-bottom: 8px ridge black;
+    border-right: 10px groove green;
+    border-left: 5px dotted red;
+}
+
+p.fourth {
+    margin-left: 50px;
+    /* -top, -right, -bottom */
+    padding-right: 50px; /* jw */
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    border-top-color: red;
+    border-right-width: 5px;
+    border-bottom-style: dashed;
+    
+}
+
+div {
+    background-color: cadetblue;
+    margin-bottom: 0.5em;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    border: 3px solid black;
+}
+
+div.control {
+    box-sizing: initial;
+}
+
+div.content {
+    box-sizing: content-box;
+}
+
+div.border {
+    box-sizing: border-box;
+}
+
+div.gallery {
+    width: 100%;
+    height: fit-content
+}
+
+img {
+    width: 200px;
+    margin: 10px;
+}
+
+#p1 {
+    border-radius: 15px;
+}
+
+#p2 {
+    border-radius: 15px 6px 20% 3em; 
+    /* kolejność
+        top-left top-right bottom-right bottom-left
+    */
+}
+
+#p3 {
+    border-radius: 50%;
+}
+
+#p4 {
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+
+#p5 {
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+
+.shadow {
+    font-size: 1.4em;
+    box-shadow: 5px 5px 5px black, 5px 5px 5px red inset;
+}

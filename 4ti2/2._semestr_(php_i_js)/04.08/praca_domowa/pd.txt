@@ -1,0 +1,9 @@
+element blokowy:
+    wysokość i szerokość 10-200px co 10 [suwaki]
+    kolor tła [select - red, blue, green, cyan, mangeta, yellow]
+    marginesy zewnętrzne - jedna wartość dla wszystkich [px]
+    marginesy wewnętrzne - osobno dla góra, dół i dla lewo prawo [px]
+    obramowanie:
+        - grubość [px]
+        - rodzaj - radio (solid, double, wavy)
+        - kolor - input:color

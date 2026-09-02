@@ -1,0 +1,51 @@
+:root {
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: rgb(73, 151, 10);
+}
+
+.letter-container {
+    background-color: rgb(247, 238, 225);
+    width: 70%;
+    margin: auto;
+    padding: 2em;
+    box-shadow: 1px 1px 60px black;
+    transform: rotate(5deg);
+    h1 { 
+        font-family: "Eater", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    p {
+        margin: 10px;
+        font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    }
+    span {
+        font-family: "Arial Black";
+        color: purple;
+        font-size: 1.1em;
+        animation: hahaha 2s infinite;
+    }
+    
+}
+@keyframes hahaha {
+        0% {
+            text-shadow: 20px 5px 15px red, -30px 16px blueviolet, 32px -15px orange, 50px 0 5px green, -5px 10px cyan;
+        }
+        25% {
+            text-shadow: 30px 10px 5px cyan, -10px 26px red, -22px 5px blue, -50px 4 10px yellow, 5px 15px purple;
+        }
+        50% {
+            text-shadow: 10px 10px -10px yellow, 43px 0px -10px purple, 10px -10px 20px green, 2px 2px 2px blue, 1px 10px red;
+        }
+        75% {
+            text-shadow: 20px 5px 15px red, -30px 16px blueviolet, 32px -15px orange, 50px 0 5px green, -5px 10px cyan;
+        }
+    }

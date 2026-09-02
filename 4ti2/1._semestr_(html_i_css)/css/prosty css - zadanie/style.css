@@ -1,0 +1,66 @@
+h1 {
+    color: blue;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    text-indent: 30px;
+    line-height: 1.5em;
+}
+
+a {
+    color: purple;
+    text-decoration: none;
+}
+
+#square {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+}
+
+#margpadd {
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+    padding: 10px;
+}
+
+#auto {
+    width: 300px;
+    margin: auto;
+    border: 1px solid grey;
+}
+
+ul {
+    list-style-type: none;
+    background-image: url(uga_buga.png);
+}
+
+#diffpadd {
+    padding: 10px 30px 50px 20px;
+
+}
+
+#border1 {
+    border: 5pxpx;
+    border-style: solid;
+}
+
+#border2 {
+    border: 5px;
+    border-style: dotted;
+}
+
+#border3 {
+    border: 5px;
+    border-style: double;
+}
+
+#card {
+    padding: 10px;
+    background-color: orange;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px;
+}

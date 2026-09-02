@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularze</title>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h1>Formularze</h1>
+
+    <h2>Zapis na wycieczkę</h2>
+    <form id="wycieczka">
+        <p>
+            <label>
+                Nazwisko: <input type="text" id="nazwisko" required>
+            </label>
+        </p>
+        <p>
+            <label>
+                Imię: <input type="text" id="imie" required>
+            </label>
+        </p>
+        <p>
+            <label>
+                Klasa:
+                <select id="klasa" required>
+                    <option value="">--wybierz--</option>
+                    <option value="4ti1">4ti1</option>
+                    <option value="4ti2">4ti2</option>
+                    <option value="4tc">4tc</option>
+                    <option value="4tr">4tr</option>
+                </select>
+            </label>
+        </p>
+        <p>
+            <button>Zapisz</button>
+            <button type="reset">Wyczyść</button>
+        </p>
+    </form>
+    
+    <h2>Newsletter</h2>
+    <form id="newsletter">
+        <p>
+            <label>
+                E-mail: <input type="email" id="email" required>
+            </label>
+        </p>
+        <p>
+            <label>
+                Zgoda na newsletter <input type="checkbox" id="zgoda" value="zgoda" required>
+            </label>
+        </p>
+        <button type="submit">Zapisz</button> <!-- albo pomiń type -->
+    </form>
+</body>
+</html>

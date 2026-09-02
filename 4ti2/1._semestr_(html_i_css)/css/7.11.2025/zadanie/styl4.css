@@ -1,0 +1,60 @@
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, footer {
+    background-color: #B3BC6D;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+#grid {
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto;
+    display: grid;
+}
+#dane {
+    background-color: #FFFFCE;
+    color: olive;
+    padding: 10px 150px 10px 150px;
+}
+
+#container {
+    display: flex
+}
+
+#left, #right {
+    background-color: #E6EE9C;
+    height: 450px;
+    text-align: center;
+}
+
+#center {
+    background-color: #FFFFCE;
+    height: 450px;
+}
+
+table {
+    border: 1px solid olive;
+    margin: auto;
+    width: 70%;
+}
+
+h2 {
+    text-align: center;
+}
+
+h2::first-letter {
+    font-size: 150%;
+    color: olive;
+}
+
+img {
+    height: 100px;
+    padding: 7px;
+}
+
+img:hover {
+    background-color: #B3BC6D;
+}

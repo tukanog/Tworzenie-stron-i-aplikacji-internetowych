@@ -1,0 +1,14 @@
+body {
+    color: light-dark(#efedea, #223a2c);
+    background-color: light-dark(#333b3c, #efefec);
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Roboto', sans-serif; /* Stosuje Roboto do całej strony */
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+a {
+    color: #00aaff;
+}

@@ -1,0 +1,74 @@
+.whrow {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blrow {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.white, .black {
+    height: 120px;
+    width: 120px;
+}
+
+.white {
+    background-color: rgb(204, 204, 204);
+}
+
+.black {
+    background-color: black;
+}
+
+.grid {
+    display: grid;
+}
+
+#area {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+        "o1 . o2 ."
+        ". o3 . o4"
+        "o5 . o6 ."
+        ". o7 . o8";
+    height: 500px;
+    width: 500px;
+    border: 3px solid black;
+    > .field1 {
+        background-image: url(zad4/1.jpg);
+        grid-area: o1;
+    }
+    > .field2 {
+        background-image: url(zad4/2.jpg);
+        grid-area: o2;
+    }
+    > .field3 {
+        background-image: url(zad4/3.jpg);
+        grid-area: o3;
+    }
+    > .field4 {
+        background-image: url(zad4/4.jpg);
+        grid-area: o4;
+    }
+    > .field5 {
+        background-image: url(zad4/5.jpg);
+        grid-area: o5;
+    }
+    > .field6 {
+        background-image: url(zad4/6.jpg);
+        grid-area: o6;
+    }
+    > .field7 {
+        background-image: url(zad4/7.jpg);
+        grid-area: o7;
+    }
+    > .field8 {
+        background-image: url(zad4/8.jpg);
+        grid-area: o8;
+    }
+      
+}

@@ -1,0 +1,10 @@
+UWAGA!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+AAAAAAAAAAAA
+tabela 6x6, komórka 50x20
+1 wiersz: parzyste komórki czerwone, nieparzyste fioletowe
+2 wiersz: pierwsza i ostatnia komórka niebieska, reszta białe
+3 wiersz: trzecia i piąta komórka cyan, reszta magenta
+4 wiersz: przedostatnia komórka żółta
+5 wiersz: trzecia i czwarta złote, reszta srebrne
+6 wiersz: wszystkie komórki niebieskie, po najechaniu na wiersz ostatnia czerwona

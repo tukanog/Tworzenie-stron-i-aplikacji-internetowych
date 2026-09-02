@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylowanie elementów</title>
+    <style>
+        p { padding: 1em; font-size: 1.5em; }
+    </style>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h1>Stylowanie elementów</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo impedit voluptas porro eligendi id quas modi debitis asperiores at magni esse nesciunt, commodi autem excepturi eveniet perspiciatis numquam repudiandae odit.</p>
+    <fieldset>
+        <legend>Panel stylowania</legend>
+
+        <!-- krój czcionki -->
+        <select id="fontFamily">
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Arial">Arial</option>
+            <option value="Consolas">Consolas</option>
+        </select> |
+
+        <!-- rozmiar czcionki -->
+        Rozmiar czcionki: 
+        <input type="range" id="fontSize" min="0.5" max="4" step="0.5" value="1.5">
+        <output id="fontSizeOutput">1.5em</output> |
+
+        <!-- kolory -->
+        Kolor czcionki:
+        <input type="color" id="color" value="#000000">
+        Kolor tła:
+        <input type="color" id="backgroundColor" value="#ffffff"> |
+
+        <!-- bold italic underline -->
+        <input type="checkbox" id="fontWeight"> pogrubienie
+        <input type="checkbox" id="fontStyle"> kursywa
+        <input type="checkbox" id="textDecoration"> podkreślenie |
+
+        <!-- wyrównanie -->
+        <input type="radio" name="align" class="align" value="left" checked> do lewej
+        <input type="radio" name="align" class="align" value="center"> do środka
+        <input type="radio" name="align" class="align" value="right"> do prawej |
+
+        <button id="textTransform" value="uppercase">WIELKIE LITERY</button>
+        <br>
+
+        <input type="text" id="text" placeholder="Napisz coś" style="width: 100%">
+        
+    </fieldset>
+</body>
+</html>

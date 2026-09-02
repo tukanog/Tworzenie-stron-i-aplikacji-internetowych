@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rodzaje znaczników i formatowanie tekstu</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Rodzaje znaczników i formatowanie tekstu</h1>
+        
+        <h2>Rodzaje znaczników</h2>
+        
+        <h3>Znaczniki blokowe (block)</h3>
+        
+        <p>Znaczniki blokowe rozciągają się na całą dostępną szerokość rodzica. Wymuszają też nową linię. Niektóre znaczniki blokowe pozwalają na umieszczanie w nich innych znaczników blokowych.</p>
+        
+        <p>Przykładowe znaczniki blokowe: h1-h6, p, ul, li, ol, menu, header, footer, main, aside, nav, article, section, div.</p>
+
+        <h3>Znaczniki inline</h3>
+
+        <p>Znaczniki inline umożliwiają modyfikowanie sposobu wyświetlania treści oraz w niektórych sytuacjach dodawanie elementom funkcjonalności Zajmują tylko tyle przestrzeni co formatowany przez nie element. Nie wymuszają nowej lini - nie wpływają na układ dokumentu. Mogą być umieszczane wewnątrz elementów blokowych, a także zagnieżdżane jeden w drugim.</p>
+
+        <p>Przykładowe znaczniki inline: a, b, i, u, em, s, strong, small, sup, sub</p>
+
+        <h3>Znaczniki hybrydowe i specjalne</h3>
+        <p>Znaczniki hybrydowe mają cechy znaczników inline i block. Przykładem jest znacznik img.</p>
+        <p>Znaczniki specjalne zachowują się w sposób specyficzny dla swojej roli. Będą to znaczniki np.: table, tr, td, th, br, hr.</p>
+        
+        <h2>Znaczniki semantyczne i niesemantyczne</h2>
+        <h3>Znaczniki semantyczne</h3>
+        <p>Znaczniki semantyczne to takie których nazwa jednoznacznie określa ich przeznaczenie</p>
+        <ul>
+            <li>h1-h6: nagłówki</li>
+            <li>p: akapit</li>
+            <li>ol, ul, menu: listy</li>
+            <li>li: element listy</li>
+            <li>header: sekcja nagłówkowa strony</li>
+            <li>footer: stopka strony</li>
+            <li>main: sekcja zawierająca główną treść strony</li>
+            <li>aside: sekcja z treścią poboczną</li>
+            <li>nav: sekcja nawigacyjna</li>
+            <li>article: artykuł (zwykle na stronach informacyjnych / blogach)</li>
+            <li>section: sekcja w artykule</li>
+            <li>em: emfaza</li>
+            <li>strong: wyróżnienie ważnego tekstu / ostrzeżenie</li>
+        </ul>
+        <h3>Znaczniki niesemantyczne</h3>
+        <p>Znacznik niesemantyczny nie informuje od razu o swoim przeznaczeniu. Rolę znacznika można wywnioskować albo z kontekstu jego użycia albo nazwy klasy / identyfikatora.</p>
+        <ul>
+            <li>div: tworzy znacznik blokowy, który jest kontenerem dla inych znaczników</li>
+            <li>span: znacznik liniowy bez predefiniowanego stylu</li>
+            <li>b: pogrubienie tekstu</li>
+            <li>i: kursywa</li>
+            <li>u: podkreślenie</li>
+            <li>s: przekreślenie</li>
+        </ul>
+
+        <h3>Znaczniki <code>strong</code> i <code>em</code> kontra <code>b</code> i <code>i</code></h3>
+        <p>Tekst w znacznikach strong i b wyświetlany jest domyślnie w ten sam sposób - jako tekst pogrubiony. Różnica jest taka, że strong sygnalizuje ważny komunikat lub ostrzeżenie. Choć różnica wizualna domyślnie nie istnieje, zostanie on zupełnie inaczej potraktowany w przeglądarce dla osób niedowidzących. Znacznik b stosujemy w związku z tym wyłącznie jako dekoracyjny a jeśli to możliwe zastępujemy go formatowaniem CSS.</p>
+
+        <p>Podobnie ma się sprawa z em oraz i. Znacznik em stosujemy dla słowa lub fragmentu tekstu na który chcemy położyć nacisk (emfazę). Znacznik i ma rolę wyłącznie dekoracyjną.</p>
+
+        <h2>Znaczniki inline - przykłady użycia</h2>
+        <ul>
+            <li>b: tekst będzie <b>pogrubiony</b></li>
+            <li>i: tekst będzie <i>pochylony</i></li>
+            <li>u: tekst będzie <u>podkreślony</u></li>
+            <li>s: tekst będzie <s>przekreślony</s></li>
+            <li>em: emfaza na <em>słowo</em> lub <em>fragment zdania</em></li>
+            <li>strong: wyróżnienie <strong>komunikatu</strong> lub <strong>ostrzeżenia</strong></li>
+            <li>a: zawartość będzie <a href="#">łączem</a></li>
+            <li>small: tekst będzie <small>pomniejszony</small></li>
+            <li>sup: tekst stanie się przypisem <sup>górnym</sup></li>
+            <li>sub: tekst stanie się przypisem <sub>dolnym</sub></li>
+            <li>code: tekst zostanie wyświetlony czcionką o stałej szerokości i uznany za fragment <code>kodu</code></li>
+            <li>cite: tekst zostanie potraktowany jako <cite>tytuł publikacji</cite></li>
+            <li>q: tekst zostanie potraktowany jako <q>cytat</q></li>
+        </ul>
+
+
+
+
+    </body>
+</html>

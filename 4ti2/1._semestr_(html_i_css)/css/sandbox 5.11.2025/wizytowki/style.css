@@ -1,0 +1,115 @@
+:root {
+    font-size: 20px;
+    font-family: Tahoma, sans-serif;
+}
+
+body {
+    background-color: rgb(233, 190, 130);
+}
+
+img {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    border: 3px solid black;
+}
+
+.card {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 50px;
+    border: 3px solid black;
+    background-color: rgb(194, 134, 51);
+}
+
+.card > div:first-child {
+    font-family: serif;
+    width: 100%;
+}
+
+.card > div:nth-of-type(2) {
+    width: 100%;
+    color: rgb(183, 5, 5);
+}
+
+.cardgrid {
+    width: 340px;
+    height: 189px;
+    display: grid;
+    border: 3px solid black;
+    font-size: medium;
+    background-color: rgb(255, 192, 104);
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    > #photo {
+        grid-area: photo;
+        margin: auto;
+        > img {
+            box-shadow: 1px 1px 20px  rgb(0, 0, 0);
+        }
+    }
+
+    > #name, #profession, #contact {
+        text-align: center;
+    }
+    
+    > #name {
+        grid-area: name;
+        margin: auto;
+    }
+
+    > #profession {
+        grid-area: profession;
+        margin: auto;
+    }
+
+    > #contact {
+        grid-area: contact;
+        margin: auto;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        font-style: normal;
+    }
+}
+
+#first {
+    grid-template-areas: 
+        "photo name"
+        "photo profession"
+        "photo contact";
+    background-image: linear-gradient(to right, rgb(255, 196, 86), rgb(255, 103, 103)) 
+}
+
+#second {
+    grid-template-areas: 
+        "name name"
+        "photo profession"
+        "photo contact";
+    background-image: linear-gradient(to top right, rgb(255, 196, 86), rgb(255, 103, 103))
+}
+
+#third {
+    grid-template-areas: 
+        "name photo"
+        "profession photo"
+        "contact photo";
+    > #name {
+        margin-left: ;
+    }
+    background-image: linear-gradient(to left, rgb(255, 196, 86), rgb(255, 103, 103))
+}
+
+#fourth {
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "photo name name"
+        "photo profession contact";
+    background-image: linear-gradient(to right, rgb(255, 196, 86), rgb(255, 103, 103));
+}

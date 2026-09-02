@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulatory</title>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h1>Kalkulatory</h1>
+
+    <form id="dodawanie">
+        <h2>Dodawanie</h2>
+        <p>
+            <label>
+                a: <input type="number" id="num1" step="any">
+            </label>
+        </p>
+        <p>
+            <label>
+                b: <input type="number" id="num2" step="any">
+            </label>
+        </p>
+        <button>Dodaj</button>
+    </form>
+
+    <form id="przeciwprostokatna">
+        <h2>Przeciwprostokątna</h2>
+        <p>
+            <label>
+                a: <input type="number" id="nr1" step="any" min="0">
+            </label>
+        </p>
+        <p>
+            <label>
+                b: <input type="number" id="nr2" step="any" min="0">
+            </label>
+        </p>
+        <button>Dodaj</button>
+        <p id="komunikat1"></p>
+    </form>
+
+    <form id="bmi">
+        <h2>BMI</h2>
+        <p>
+            <label>
+                wzrost (w cm): <input type="number" id="wzrost" step="any" min="0">
+            </label>
+        </p>
+        <p>
+            <label>
+                waga (w kg): <input type="number" id="waga" step="any" min="0">
+            </label>
+        </p>
+        <button>Dodaj</button>
+        <p id="komunikat2"></p>
+    </form>
+</body>
+</html>

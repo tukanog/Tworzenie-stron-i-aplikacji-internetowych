@@ -1,0 +1,11 @@
+:nth-child(int) - potomek elementu gdzie int to liczba naturalna
+:nth-child(odd) - nieparzyści potomkowie
+:nth-child(even) - parzyści potomkowie
+
+:nth-child(an+b) n <0, 1, 2 ...> 
+
+:nth-last-child(int) - liczy od końca
+
+:first-child - pierwszy potomek 
+:last-child - ostatni potomek
+:

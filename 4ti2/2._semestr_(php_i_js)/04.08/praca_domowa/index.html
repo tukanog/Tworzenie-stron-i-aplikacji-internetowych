@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="box">Lorem ipsum dolor sit amet.</div>
+    <fieldset>
+        <legend>Panel stylowania</legend>
+        Wysokość: <input type="range" id="height" min="10" max="200" step="10"><output id="heightOutput"> px</output>
+        Szerokość: <input type="range" id="width" min="10" max="200" step="10"><output id="widthOutput"> px</output> |
+        Kolor tła: <input type="color" id="backgroundColor"> | 
+        Margines zewnętrzny: <input type="number" id="margin" min="0"> px |
+        Margines wewnętrzny: 
+            góra, dół: <input type="number" id="paddingTopBot" min="0"> px
+            lewo, prawo: <input type="number" id="paddingLeftRight" min="0"> px |
+        Obramowanie:
+            grubość: <input type="number" id="borderThickness" min="0"> px
+            rodzaj: 
+                <input type="radio" class="borderType" name="borderType" value="solid">solid 
+                <input type="radio" class="borderType" name="borderType" value="double">double
+                <input type="radio" class="borderType" name="borderType" value="wavy">wavy
+            kolor: <input type="color" id="borderColor">
+    </fieldset>
+</body>
+</html>

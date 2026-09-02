@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Podstawy HTML</title>
+    </head>
+    <body>
+        <h1>Podstawy HTML</h1> <!-- h1 używamy tylko raz -->
+        <h2>Nagłówki</h2>
+        <p>Nagłówki (ang. headers) służą do wstawienia tytułu strony (h1), nazw głównych sekcji (h2), nazw sekcji pobocznych (h3...). Najniższym poziomem nagłówka jest h6.</p>
+        
+        <h2>Akapity</h2>
+        <p>Akapit (ang. paragraph) to spójny blok tekstu. Tekst umieszczamy w znaczniku p.</p>
+        
+        <h2>Listy</h2>
+        <p>Lista to zbiór elementów o spójnej treści lub przeznaczeniu. Listę tworzymy używając znacznika listy (ol, ul, menu). Wewnątrz listy mogą się znajdować jedynie jej elementy (li).</p>
+        <h3>Lista uporządkowana</h3>
+        <p>Lista uporządkowana (organized list) to lista w której znaczenie ma kolejność i/lub ilość elementów. Listę rozpoczyna znacznik ol, poszczególne elementy li są numerowane kolejnymi wartościami. Przykłady: lista osób na wycieczkę, przepis na ciasto, ranking ulubionych seriali.</p>
+        <h4>Przykład: ranking seriali</h4>
+        <ol>
+            <li>Breaking Bad</li>
+            <li>Better Call Saul</li>
+            <li>Jojo's Bizzare Adventure</li>
+            <li>Arcane</li>
+            <li>Cyberpunk: Edgerunners</li>
+        </ol>
+
+        <h3>Lista nieuporządkowana</h3>
+        <p>Lista nieuporządkowana (ang, unorganized list) zawiera elementy, których ilośc i kolejność nie ma znaczenia. Zanim pojawił się znacznik menu, była wykorzystywana do tworzenia menu strony. Listę nieuporządkowaną tworzymy znacznikiem ul. Przykłady: typowe zwierzęta domowe, lista zakupów.</p>
+        <h4>Przykład: typowe zwierzęta domowe</h4>
+        <ul>
+            <li>pies</li>
+            <li>kot</li>
+            <li>królik</li>
+            <li>papuga</li>
+        </ul>
+
+        <h3>Menu</h3>
+        <p>Znacznik menu pozwala stworzyć listę, która jest menu nawigacyjnym strony. Znacznik menu jest znacznikiem semantycznym - jego nazwa informuje o przeznaczeniu.</p>
+        <h4>Przykład</h4>
+        <menu>
+            <li><a href="#">Strona główna</a></li>
+            <li><a href="#">Nasza misja</a></li>
+            <li><a href="#">O nas</a></li>
+        </menu>
+
+        <h3>Lista zagnieżdżona</h3>
+        <p>Lista zagnieżdżona to lista utworzona wewnątrz elementu innej (nadrzędnej) listy.</p>
+        <h4>Przykład: województwa i stany</h4>
+        <ol>
+            <li>
+                Województwa w Polsce:
+                <ul>
+                    <li>łódzkie</li>
+                    <li>małopolskie</li>
+                    <li>wielkopolskie</li>
+                </ul>
+            </li>
+            <li>
+                Stany w USA:
+                <ul>
+                    <li>Kalifornia</li>
+                    <li>Floryda</li>
+                    <li>Teksas</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h2>Tabele</h2>
+        <p>Tabele tworzymy używając znacznik table. Wewnątrz wstawiamy znaczniki wierszy (tr - table row). W wierszach wstawiamy komórki nagłówkowe (th - table header) lub zwykłe (td - table data). Zazwyczaj komórki nagłówkowe wstawiamy tylko w pierwszym, czasem też w ostatnim wierszu.</p>
+        <table border="10"> <!-- ZA BORDER BĘDZIE -PUNKT NA SPR. (DEPRECATED) -->
+            <tr>
+                <th>Lp.</th>
+                <th>Nazwisko</th>
+                <th>Imię</th>
+                <th>Ocena</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Kowal</td>
+                <td>Paweł</td>
+                <td>ndst.</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Miszta</td>
+                <td>Natan</td>
+                <td>ndst.</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Kruk</td>
+                <td>Michał</td>
+                <td>dost.</td>
+            </tr>
+        </table>
+
+        <h3>Łączenie komórek w wierszach</h3>
+        <p>Do łączenia komórek w wierszach używamy rowspan.</p>
+
+        <table border="10">
+            <tr>
+                <th>Nazwisko</th>
+                <th>Pozycja</th>
+                <th>Drużyna</th>
+            </tr>
+            <tr>
+                <td>Torres</td>
+                <td rowspan="3">napastnik</td>
+                <td rowspan="2">FC Barcelona</td>
+            </tr>
+            <tr>
+                <td>Lewandowski</td>
+            </tr>
+            <tr>
+                <td>Siwek</td>
+                <td>ŁKS</td>
+            </tr>
+        </table>
+
+        <h3>Łączenie komórek w kolumnach</h3>
+        <p>Do łączenia komórek w kolumnach używamy colspan.</p>
+        <table border="10">
+            <tr>
+                <th>Nazwisko</th>
+                <th>Imię</th>
+                <th>Klub</th>
+            </tr>
+            <tr>
+                <td>Lewandowski</td>
+                <td>Robert</td>
+                <td>FC Barcelona</td>
+            </tr>
+            <tr>
+                <td colspan="2">Neymar</td>
+                <td>Coś tam xd</td>
+            </tr>
+        </table>
+        <table>
+            <tr>3</tr>
+            <tr>3</tr>
+            <tr>3</tr>
+        </table>
+    </body>
+</html>
