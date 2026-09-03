@@ -16,8 +16,7 @@ else {
 }
 
 function wyswietlImie() {
-    let imieZCiasteczka = wartoscCiasteczka('imie')
-    qs('#imie').innerHTML = imieZCiasteczka
+    qs('#imie').innerHTML = wartoscCiasteczka('imie')
 }
 
 function wyczysc() {
