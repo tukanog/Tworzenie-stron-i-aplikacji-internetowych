@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liga</title>
-    <style>table,td { border: 1px solid black } </style>
+    <style>table,td { border: 1px solid black }</style>
 </head>
 <body>
     <?php
@@ -28,7 +28,7 @@
             while($zawodnik = $zawodnicy->fetch_assoc()) {
         ?>        
             <tr>
-                <td><?php echo $zawodnik['id']; ?></td>
+                <td ><?php echo $zawodnik['id']; ?></td>
                 <td><?= $zawodnik['imie']; ?></td>
                 <td><?= $zawodnik['nazwisko']; ?></td>
                 <td><?= $zawodnik['klub']; ?></td>
