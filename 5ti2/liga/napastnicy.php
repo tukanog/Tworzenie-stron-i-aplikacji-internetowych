@@ -28,7 +28,7 @@
             while($zawodnik = $zawodnicy->fetch_assoc()) {
         ?>        
             <tr>
-                <td ><?php echo $zawodnik['id']; ?></td>
+                <td><?php echo $zawodnik['id']; ?></td>
                 <td><?= $zawodnik['imie']; ?></td>
                 <td><?= $zawodnik['nazwisko']; ?></td>
                 <td><?= $zawodnik['klub']; ?></td>
