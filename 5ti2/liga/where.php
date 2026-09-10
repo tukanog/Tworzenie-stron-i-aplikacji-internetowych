@@ -45,7 +45,7 @@
         <a href="where.php?posortuj=true">Posortuj</a>
     </p>
     <p>
-        <form action="where.php" method="get">
+        <form action="zawodnik.php" method="get">
             <label>
                 Wpisz id zawodnika: <input type="number" name="id">
             </label>
@@ -67,7 +67,11 @@
                 while($zawodnik = $zawodnicy->fetch_assoc()) {
         ?>        
             <tr class='tr<?php echo $zawodnik['id'] % 2?>'>
-                <td><?php echo $zawodnik['id']; ?></td>
+                <td>
+                    <a href="zawodnik.php?id=<?= $zawodnik['id']; ?>">
+                        <?= $zawodnik['id']; ?>
+                    </a>
+                </td>
                 <td><?= $zawodnik['imie']; ?></td>
                 <td><?= $zawodnik['nazwisko']; ?></td>
                 <td><?= $zawodnik['klub']; ?></td>

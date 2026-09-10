@@ -28,6 +28,7 @@
         </label>
         <button>Wybierz</button>
     </form>
+    
     <?php 
         if (isset($_GET['nazwisko'])) {
     ?>

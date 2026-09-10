@@ -17,6 +17,7 @@
     <h1>Liga</h1>
     <h2>Wszyscy zawodnicy</h2>
     <p>Zawodnicy ogółem: <?php echo $zawodnicy->num_rows; ?></p>
+
     <table>
         <tr>
             <th>Id</th>
