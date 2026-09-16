@@ -33,8 +33,8 @@
                 while ($aktor = $aktorzy->fetch_assoc()) {
             ?>      <a href="aktor.php?id=<?= $aktor['id_aktora']?>">
                         <div class="aktorindex">
-                            <img src="img/<?= $aktor['plik_awatara']?>">
-                            <p><?= $aktor['imie']; echo " "; echo $aktor['nazwisko'] ?></p>
+                            <img src="img/<?= $aktor['plik_awatara']?>" alt="<?= $aktor['imie'].' '.$aktor['nazwisko'] ?>" title="<?= $aktor['imie'].' '.$aktor['nazwisko'] ?>">
+                            <p><?= $aktor['imie'].' '.$aktor['nazwisko'] ?></p>
                         </div>
                     </a>
             <?php

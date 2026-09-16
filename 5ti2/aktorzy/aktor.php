@@ -37,7 +37,7 @@
     <main>
         <div id="aktorzy">
             <div class="aktoraktor">
-                <img src="img/<?= $aktor['plik_awatara']?>">
+                <img src="img/<?= $aktor['plik_awatara']?>" alt="<?= $aktor['imie'].' '.$aktor['nazwisko'] ?>" title="<?= $aktor['imie'].' '.$aktor['nazwisko'] ?>">
                 <h1><?= $aktor['imie']; echo " "; echo $aktor['nazwisko'] ?></h1>
             </div>
         </div>
