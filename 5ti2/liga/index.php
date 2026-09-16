@@ -46,5 +46,11 @@
     <?php
         $db->close(); // zamknięcie połączenia 
     ?>
+
+
+
+
+
+    <?php ?>
 </body>
 </html>
